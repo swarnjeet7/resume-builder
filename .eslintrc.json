@@ -16,7 +16,8 @@
   ],
   "parserOptions": {
     "ecmaVersion": 6,
-    "sourceType": "module"
+    "sourceType": "module",
+    "project": ["./tsconfig.json"]
   },
   "plugins": ["react", "import"],
   "rules": {
@@ -25,7 +26,8 @@
     "import/namespace": 2,
     "import/default": 2,
     "import/export": 2,
-    "no-console": "off"
+    "no-console": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }]
   },
   "settings": {
     "import/resolver": {
